@@ -1,0 +1,46 @@
+MacOS
+
+pip3 install polyglot
+pip3 install six
+pip3 install appdirs
+pip3 install argos-translate-files==1.1.0
+pip3 install flask
+pip3 install flask_swagger
+pip3 install flask_swagger_ui
+
+pip3 install Flask==2.1.2
+pip3 install flask-swagger==0.2.14
+pip3 install flask-swagger-ui==3.36.0
+pip3 install Flask-Limiter==2.4.5.1
+
+pip3 install APScheduler==3.9.1
+pip3 install translatehtml==1.5.2
+pip3 install argos-translate-files==1.1.0
+pip3 install itsdangerous==2.1.2
+pip3 install Werkzeug==2.1.2
+
+! ! ! try to install: pip3 install pyicu>=2.8 fail
+solution: https://gitlab.pyicu.org/main/pyicu
+	brew install pkg-config icu4c
+	export PATH="/usr/local/opt/icu4c/bin:/usr/local/opt/icu4c/sbin:$PATH"
+	export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/icu4c/lib/pkgconfig"
+
+Debian:
+
+apt-get update
+
+# EITHER - from apt directly https://packages.debian.org/source/stable/pyicu
+apt-get install python3-icu
+# OR - from source
+apt-get install pkg-config libicu-dev
+pip install --no-binary=:pyicu: pyicu
+
+
+
+pip3 install pycld2
+pip3 install morfessor
+pip3 install expiringdict==1.2.1
+pip3 install morfessor
+
+default model path: /root/.local/share/argos-translate/packages
+edit model path: lib/python3.10/site-packages/argostranslate/settings.py line20:data_dir

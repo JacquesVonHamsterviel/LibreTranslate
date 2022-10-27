@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  libretranslate:
+    image: libretranslate:latest
+    container_name: libretranslate
+    build: .
+    restart: unless-stopped
+    volumes:
+      - /root/LibreTranslate/language:/root/.local/cache/argos-translate/downloads
+    ports:
+      - 5000:5000
+    ## Uncomment above command and define your args if necessary
+    # command: --ssl --ga-id MY-GA-ID --req-limit 100 --char-limit 500 

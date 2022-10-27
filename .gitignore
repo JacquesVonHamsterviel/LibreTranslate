@@ -1,0 +1,5 @@
+.DS_Store
+lib
+bin
+pip.conf
+sources.list
