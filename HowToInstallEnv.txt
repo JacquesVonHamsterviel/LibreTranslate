@@ -37,6 +37,7 @@ pip install --no-binary=:pyicu: pyicu
 
 Windows:
 pip install morfessor
+pip install expiringdict
 https://www.lfd.uci.edu/~gohlke/pythonlibs/
 pip install PyICU.whl 
 pip install PyCLD2.whl
