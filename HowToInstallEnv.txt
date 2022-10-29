@@ -35,7 +35,11 @@ apt-get install python3-icu
 apt-get install pkg-config libicu-dev
 pip install --no-binary=:pyicu: pyicu
 
-
+Windows:
+pip install morfessor
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+pip install PyICU.whl 
+pip install PyCLD2.whl
 
 pip3 install pycld2
 pip3 install morfessor
